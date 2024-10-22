@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Page</title>
+  {{!-- <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .container input[type="text"],
+    .container input[type="email"],
+    .container input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+    }
+
+    .container button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      border: none;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .container button:hover {
+      background-color: #45a049;
+    }
+
+    .container p {
+      text-align: center;
+      margin-top: 15px;
+    }
+  </style> --}}
+</head>
+<body>
+  <div class="container">
+    <h2>Registration</h2>
+    <form action="/register" method="POST">
+      <input type="text" placeholder="Full Name" name="fullname" value="" required>
+      <input type="email" placeholder="Email Address" name="email" value="" required>
+      <label><input type="radio" name="gender" value="male" checked/><span>Male</span></label>
+      <label><input type="radio" name="gender" value="female" /><span>Female</span></label>
+      <input type="password" placeholder="Password" name="password" value="" required>
+      {{!-- <input type="password" placeholder="Confirm Password" name="confirmpassword" value="" required> --}}
+      <button type="submit">Register</button>
+    </form>
+    <p>Already have an account? <a href="#">Login</a></p>
+  </div>
+</body>
+</html>
